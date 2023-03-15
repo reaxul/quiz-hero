@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Assignment 7 blog</title>
+</head>
+
+<body class="container m-3">
+    <h3 class="text-center">Assignment 7</h3>
+
+    <h3 class="text-center">Question Answer:</h3>
+    <h6>1. What is the difference between .map(), filter(), forEach() and find() ?</h6>
+    <b>Ans: </b>
+    <ul>
+        <li>
+            <p>
+            <h6>.map()</h6>
+            This method returns a new array with the same length of the original array, but each elements will be
+            transformed based on the condition and the original array will remain unchanged
+            </p>
+        </li>
+        <li>
+            <p>
+            <h6>.filter()</h6>
+            This method returns a new array with only elements that passed the test based on the condition and the
+            original array will remain unchanged
+            </p>
+        </li>
+        <li>
+            <p>
+            <h6>.find()</h6>
+            This method returns only the first element that passed the test based on the condition, if no element pass
+            the test it will return <span class="text-danger">`undefined`</span>
+            </p>
+        </li>
+        <li>
+            <p>
+            <h6>.forEach()</h6>
+            This method iterates over each element of an array and executes a function on it.It does not return anything
+            and does not modify the original array.
+            </p>
+        </li>
+    </ul>
+    <h6>2. What is localStorage, sectionStorage and cookies ?</h6>
+    <b>Ans: </b>
+    <p>
+        localStorage and sessionStorage are methods of storing data in a web browser using JavaScript, while cookies are
+        small text files that are stored on a user's computer by a website. Each of these methods has different use
+        cases and limitations, and the choice of which to use depends on the specific needs of the application.
+    </p>
+    <h6>
+        3. What is event loop and how does it work ?
+    </h6>
+    <b>Ans: </b>
+    <p>
+        The event loop is a mechanism in JavaScript that allow the code to run asynchronously without blocking the main
+        thread. It continuously checks for new tasks, it executes the task and moves to the next one. This method allows
+        JavaScript to handle user input and other time-consuming operations without slowing down the application.
+    </p>
+
+    <h4 class="text-center mt-5">Function explanation:</h4>
+    <h6>quizTimer()</h6>
+    <p>
+        This function is like a timer for a quiz game. When you start the quiz, it shows the time left for the quiz to
+        end.
+        Every second, the timer updates the time left on the screen. It also changes the color of the time left every 60
+        seconds to make the ui more user friendly.
+    </p>
+    <h6>choseQuiz()</h6>
+    <p>
+        This function is like a quiz. This function execute everytime you answer a quiz.
+
+        This function checks if you already answered the question before. If you did, it updates your answer. If you didn't,
+        it adds your answer to the list of answers and show all the ans you gave.
+    </p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
