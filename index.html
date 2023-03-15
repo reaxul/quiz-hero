@@ -18,11 +18,7 @@
     />
     <title>Quiz Hero</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./index.js" defer></script>
-
-    <!-- You don't need to change noChange.js file. It's fine -->
-    <script src="./noChange.js" defer></script>
-    <!-- You don't need to change noChange.js file. It's fine -->
+    
 
     <script>
       tailwind.config = {
@@ -58,8 +54,7 @@
     <!-- Landing page content start -->
     <section
       class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto text-center"
-      id="rulesContainer"
-    >
+      id="rulesContainer">
       <h1 class="text-center my-8 text-xl">Welcome to Quiz Hero</h1>
       <div class="lg:w-[80%] md:w-[90%] w-[90%] mx-auto text-left">
         <h1 class="text-md text-gray-800 text-center">Quiz Rules:</h1>
@@ -104,11 +99,9 @@
     <!-- Top bar of question page start -->
     <section
       class="shadow-sm my-5 py-2 sticky top-0 bg-white z-10 hidden"
-      id="alertContainer"
-    >
+      id="alertContainer">
       <div
-        class="w-9/12 mx-auto flex md:flex-row flex-col justify-between items-center"
-      >
+        class="w-9/12 mx-auto flex md:flex-row flex-col justify-between items-center">
         <div class="text-xs font-normal">
           <span class="text-red-700">Attention!</span> You have 60 seconds to
           answer 6 questions.
@@ -136,11 +129,10 @@
     <!-- Quiz section start -->
     <section
       class="md:w-9/12 w-[90%] md:flex-row flex-col mx-auto hidden"
-      id="submitContainer"
-    >
+      id="submitContainer">
       <!-- Question section start -->
       <div class="md:w-[70%] w-full">
-        <div class="duration-500 quizContainer"></div>
+        <div class="duration-500" id="quizContainer"></div>
       </div>
       <!-- Question section end -->
       <!-- Answer section start -->
@@ -188,5 +180,11 @@
       Copyright © 2023 Quiz Hero All Rights Reserved.
     </footer>
     <!-- Footer section end -->
+
+    <script src="./index.js" defer></script>
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
   </body>
 </html>

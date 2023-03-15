@@ -46,7 +46,7 @@ startQuiz.addEventListener("click", () => {
 // All quiz data fetched from json
 const loadQuiz = async () => {
   const res = await fetch("./data/quiz.json");
-  const data = await res.json;
+  const data = await res.json();
   quizData = data;
   displayQuiz(data);
 };
@@ -69,12 +69,12 @@ const displayQuiz = (data) => {
   <div class="grid grid-cols-2 gap-4 mt-5">
     ${displayQuizOptions(quiz.options, i)}
   </div>
-</div>`;
+  </div>`;
   });
 };
 
 // EventListener for quiz submit button
-document.querySelector("#submit").addEventlistener("click", () => {
+document.querySelector("#submit").addEventListener("click", () => {
   if (answers.length < 6) {
     return;
   }
@@ -82,7 +82,7 @@ document.querySelector("#submit").addEventlistener("click", () => {
   answersContainer.innerHTML = `<div class="my-4">
   <i class="fa-solid fa-fan animate-spin text-2xl text-green-600"></i>
   <p class="text-xs animate-pulse">Please Wait, We are checking...</p>
-</div>`;
+  </div>`;
   let timeTaken = document.querySelector("#count");
   let totalMark = 0;
   let grade = {
